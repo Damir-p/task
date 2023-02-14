@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from task import views
 # from django.conf.urls import url
 # from rest_framework_swagger.views import get_swagger_view
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('task/', include()views))
+    path('categories_tags/',include('category.urls')),
+    path('swagger'/, schema_view.with_ui("swagger", cache_timeout=0), name='schema-swagger-ui')
 ]
 
 
