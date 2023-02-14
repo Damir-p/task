@@ -1,5 +1,5 @@
 from .models import Category, Tag
-from .serialaizers import CategorySerializer, TagSerializer
+from .serializers import CategorySerializer, TagSerializer
 
 from rest_framework import viewsets
 

@@ -10,7 +10,7 @@ class Category(models.Model):
         verbose_name= 'Категории'
         verbose_name_plural = 'Категория'
         ordering = ('-id',)
-        # Register your models her
+       
 class Tag(models.Model): 
     tag_name = models.CharField(max_length=250, blank=True, null=True, verbose_name="Называния Тэга")
     

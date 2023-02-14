@@ -22,7 +22,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('categories_tags/',include('category.urls')),
-    path('swagger'/, schema_view.with_ui("swagger", cache_timeout=0), name='schema-swagger-ui')
+    path('books/',include('books.urls')),
+    path('accounts/',include('accounts.urls')),
+    # path('swagger'/, schema_view.with_ui("swagger", cache_timeout=0), name='schema-swagger-ui')
 ]
 
 
